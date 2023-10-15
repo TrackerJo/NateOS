@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="loadup.css">
+    <title>NateOS Mac</title>
+</head>
+<body>
+    <div class="loadup">
+        
+        <img src="assets/applelogo.png" alt="Apple logo" class="aLogo">
+        <div id="LoadProgress_Status" class="hidden">
+            <div id="LoadProgress"></div>
+          </div>
+         
+    </div>
+    <audio src="assets/macStartup.mp3" id="my_audio" ></audio>
+    <img id="powerOn" src="assets/power.png" alt="Power On"/>
+    <script>
+        function playSound() {
+            document.getElementById("my_audio").play();
+        }
+
+        document.addEventListener("click", () => {
+            playSound();
+            document.getElementById("powerOn").classList.add("hidden");
+            document.getElementById("LoadProgress_Status").classList.remove("hidden");
+            update();
+        });
+ 
+        function update() {
+            
+            var element = document.getElementById("LoadProgress");   
+            var width = 1;
+            var identity = setInterval(scene, 30);
+            function scene() {
+                if (width >= 100) {
+                    clearInterval(identity);
+                    window.location = "/Mac/";
+                } else {
+                width++; 
+                element.style.width = width + '%'; 
+                }
+            }
+        }
+    </script>
+</body>
+</html>

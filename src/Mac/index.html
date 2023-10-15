@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="homepage.css">
+    <link rel="stylesheet" href="styles/taskbar.css">
+    <link rel="stylesheet" href="styles/navbar.css">
+    <link rel="stylesheet" href="styles/windows.css">
+    <script src="./Constants.js"></script>
+    <script src="./components/TestComp_created.js" defer></script>
+    <script src="./components/windows.js" defer></script>
+    <script src="./components/taskbar_apps.js" defer></script>
+    <script src="./components/navBar.js" defer></script>
+    <script src="./components/load_components.js" defer></script>
+    <script src="homepage.js" defer></script>
+    <title>NateOS Mac</title>
+</head>
+<body class="custom-root">
+    <div class="content-wrapper">
+        
+        <div class="windows">
+
+        </div>
+        <div class="taskbarArea hidden">
+            <div class="taskbar">
+                <div class="taskbar-contents">
+                    <div class="custom-component" data-type="taskbar-app" data-icon="./assets/finder.png" data-appName="Finder" data-appId="finder"></div>
+                   
+                    <div class="custom-component" data-type="taskbar-app" data-icon="./assets/launchpad.png" data-appName="Launchpad" data-appId="launchpad"></div>
+                   
+                    <div class="custom-component" data-type="taskbar-app" data-icon="./assets/vscode.png" data-appName="Visual Studio Code" data-appId="vscode"></div>
+                   
+                    <div class="custom-component" data-type="taskbar-app" data-icon="./assets/googlechrome.png" data-appName="Google Chrome" data-appId="chrome"></div>
+                   
+                    <div class="custom-component" data-type="taskbar-app" data-icon="./assets/unity.png" data-appName="Unity" data-appId="unity"></div>
+                   
+                  
+                    <div class="custom-component" data-type="taskbar-app" data-icon="./assets/alfred.png" data-appName="Alfred" data-appId="alfred"></div>
+                   
+                    <div class="custom-component" data-type="taskbar-app" data-icon="./assets/steam.png" data-appName="Steam" data-appId="steam"></div>
+                   
+                    <!-- <div class="custom-component" data-type="counter" data-count="2"> -->
+                    
+                </div>
+            </div>
+        </div>
+        <div class="openTaskbar">
+            
+        </div>
+
+        <!-- <div class="custom-component" data-type="window-chrome"></div>
+        <div class="custom-component" data-type="window-chrome"></div> -->
+       
+            <!-- <iframe src="https://www.google.com/search?q=share+icon&igu=1" frameborder="0" id="googleFrame"></iframe> -->
+      
+        <div class="navBar">
+            <div class="navBar-left">
+                <div class="custom-component" data-type="navBar" data-appId="finder"></div>
+                <!-- <div class="finder selected-app app-options">
+                    <div class="menu-item menu-logo">
+                        <img src="assets/applelogo.png" alt="Apple logo" class="app-logo">
+                        <div class="submenu">
+                            <label for="">About this Mac</label>
+                           
+                            <hr class="menu-divider">
+                            <label for="">System Preferences</label>
+        
+                            <label for="">App Store</label>
+        
+                            <hr class="menu-divider">
+                            <label for="">Force Quit...</label>
+                            <hr class="menu-divider">
+                            <label for="">Sleep</label>
+                            <label for="">Restart...</label>
+                            <label for="">Shut Down...</label>
+                            <hr class="menu-divider">
+                            <label for="">Lock Screen</label>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <label for="" class="app-name">Finder</label>
+                        <div class="submenu">
+                            <label for="">About Finder</label>
+                           
+                            <hr class="menu-divider">
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <label for="">File</label>
+                        <div class="submenu">
+                            
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <label for="">Edit</label>
+                        <div class="submenu">
+                          
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <label for="">View</label>
+                        <div class="submenu">
+                       
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <label for="">Go</label>
+                        <div class="submenu">
+                           
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <label for="">Window</label>
+                        <div class="submenu">
+                           
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <label for="">Help</label>
+                        <div class="submenu">
+                          
+                        </div>
+                    </div>
+                </div>
+                <div class="chrome app-options">
+                    <div class="menu-item menu-logo">
+                        <img src="assets/applelogo.png" alt="Apple logo" class="app-logo">
+                        <div class="submenu">
+                            <label for="">About this Mac</label>
+                            
+                            <hr class="menu-divider">
+                            <label for="">System Preferences</label>
+        
+                            <label for="">App Store</label>
+        
+                            <hr class="menu-divider">
+                            <label for="">Force Quit...</label>
+                            <hr class="menu-divider">
+                            <label for="">Sleep</label>
+                            <label for="">Restart...</label>
+                            <label for="">Shut Down...</label>
+                            <hr class="menu-divider">
+                            <label for="">Lock Screen</label>
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <label for="" class="app-name">Chrome</label>
+                        <div class="submenu">
+                            <label for="">About Chrome</label>
+                            
+                            <hr class="menu-divider">
+                            <label for="">Settings...</label>
+                            <hr class="menu-divider">
+                            <label for="">Clear Browsing Data...</label>
+                            <label for="">Import Bookmarks and Settings...</label>
+                            <hr class="menu-divider">
+                            <label for="">Hide Google Chrome</label>
+                            <hr class="menu-divider">
+                            <label for="" class="quit-app" data-app="chrome">Quit Google Chrome</label>
+
+
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <label for="">File</label>
+                        <div class="submenu">
+                         
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <label for="">Edit</label>
+                        <div class="submenu">
+                           
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <label for="">View</label>
+                        <div class="submenu">
+                            
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <label for="">History</label>
+                        <div class="submenu">
+                           
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <label for="">Bookmarks</label>
+                        <div class="submenu">
+                           
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <label for="">Profiles</label>
+                        <div class="submenu">
+                           
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <label for="">Tab</label>
+                        <div class="submenu">
+                            
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <label for="">Window</label>
+                        <div class="submenu">
+                          
+                        </div>
+                    </div>
+                    <div class="menu-item">
+                        <label for="">Help</label>
+                        <div class="submenu">
+                            
+                        </div>
+                    </div>
+                
+                </div> -->
+            </div>  
+            <div class="rightSide">
+                <div class="battery">
+                    <label for="batteryIcon" id="batteryCharge">100%</label>
+                    <img src="assets/battery_100.png" alt="Battery" id="batteryIcon">
+                    
+                </div>
+               
+                <img src="assets/search_icon.png" alt="Search" id="search">
+                <div class="dateTime">
+                    <label id="date">Fri May 26</label>
+                    <label id="time">10:36 AM</label>
+                </div>
+
+            </div>
+        </div>
+    </div>
+    <div class="warning-message">
+        <h1>Please make your browser window bigger!</h1>
+    </div>
+</body>
+</html>

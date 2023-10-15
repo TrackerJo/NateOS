@@ -1,0 +1,15 @@
+"filename", "language", "JavaScript", "CSS", "HTML", "comment", "blank", "total"
+"/Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/components/load_components.js", "JavaScript", 21, 0, 0, 0, 5, 26
+"/Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/components/navBar.js", "JavaScript", 219, 0, 0, 2, 42, 263
+"/Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/components/taskbar_apps.js", "JavaScript", 52, 0, 0, 11, 19, 82
+"/Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/components/windows.js", "JavaScript", 504, 0, 0, 58, 155, 717
+"/Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/homepage.css", "CSS", 0, 47, 0, 9, 34, 90
+"/Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/homepage.js", "JavaScript", 136, 0, 0, 3, 39, 178
+"/Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/index.html", "HTML", 0, 0, 58, 164, 16, 238
+"/Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/loadup.css", "CSS", 0, 37, 0, 0, 8, 45
+"/Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/loadup.html", "HTML", 0, 0, 45, 0, 5, 50
+"/Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/styles/navbar.css", "CSS", 0, 136, 0, 16, 52, 204
+"/Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/styles/taskbar.css", "CSS", 0, 112, 0, 5, 25, 142
+"/Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/styles/windows.css", "CSS", 0, 144, 0, 7, 50, 201
+"/Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/index.html", "HTML", 0, 0, 22, 0, 1, 23
+"Total", "-", 932, 476, 125, 275, 451, 2259

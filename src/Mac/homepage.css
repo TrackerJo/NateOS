@@ -1,0 +1,90 @@
+
+
+html {
+    min-width: 100%;
+    min-height: 100%;
+    background-image: url("assets/monterey_background.png");
+    background-position: top center;
+    background-color: #000;
+    overflow: hidden;
+  }
+  
+  body {
+    width: 1054px;
+    height: 1054px;
+    font-family: -apple-system, BlinkMacSystemFont, sans-serif;
+        
+  }
+
+
+
+
+
+.warning-message {
+    display: none;
+  }
+
+@media (max-height: 399px), (max-width: 800px){
+    .warning-message {
+      display: block;
+    }
+    .content-wrapper {
+      display: none;
+    }
+  }
+
+ 
+ 
+
+
+
+
+.app-options.selected-app{
+    display: block;
+   
+}
+
+
+.app-logo{
+    width: 15px;
+  }
+
+
+
+
+/* .taskbar-tooltip label{
+    
+} */
+
+
+
+/* .has-tooltip:hover .tooltip {
+    display: block;
+} */
+
+/* .has-tooltip:hover .tooltip {
+    display: block;
+} */
+
+
+
+.chrome-tab-add {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 7px;
+    left: 6px;
+    display: inline-block;
+    padding: 4px;
+    
+}
+
+.chrome-tab-add:hover{
+    background-color: rgba(255, 255, 255, 0.209);
+    border-radius: 10px;
+}
+
+.chrome-tab-add.clicked{
+    background-color: rgba(255, 255, 255, 0.31);
+    border-radius: 10px;
+}

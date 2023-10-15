@@ -1,0 +1,44 @@
+Date : 2023-06-20 21:52:16
+Directory : /Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src
+Total : 13 files,  1533 codes, 275 comments, 451 blanks, all 2259 lines
+
+Languages
++------------+------------+------------+------------+------------+------------+
+| language   | files      | code       | comment    | blank      | total      |
++------------+------------+------------+------------+------------+------------+
+| JavaScript |          5 |        932 |         74 |        260 |      1,266 |
+| CSS        |          5 |        476 |         37 |        169 |        682 |
+| HTML       |          3 |        125 |        164 |         22 |        311 |
++------------+------------+------------+------------+------------+------------+
+
+Directories
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| path                                                                                            | files      | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| .                                                                                               |         13 |      1,533 |        275 |        451 |      2,259 |
+| . (Files)                                                                                       |          1 |         22 |          0 |          1 |         23 |
+| Mac                                                                                             |         12 |      1,511 |        275 |        450 |      2,236 |
+| Mac (Files)                                                                                     |          5 |        323 |        176 |        102 |        601 |
+| Mac/components                                                                                  |          4 |        796 |         71 |        221 |      1,088 |
+| Mac/styles                                                                                      |          3 |        392 |         28 |        127 |        547 |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+
+Files
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| filename                                                                                        | language   | code       | comment    | blank      | total      |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+
+| /Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/components/load_components.js | JavaScript |         21 |          0 |          5 |         26 |
+| /Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/components/navBar.js          | JavaScript |        219 |          2 |         42 |        263 |
+| /Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/components/taskbar_apps.js    | JavaScript |         52 |         11 |         19 |         82 |
+| /Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/components/windows.js         | JavaScript |        504 |         58 |        155 |        717 |
+| /Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/homepage.css                  | CSS        |         47 |          9 |         34 |         90 |
+| /Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/homepage.js                   | JavaScript |        136 |          3 |         39 |        178 |
+| /Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/index.html                    | HTML       |         58 |        164 |         16 |        238 |
+| /Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/loadup.css                    | CSS        |         37 |          0 |          8 |         45 |
+| /Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/loadup.html                   | HTML       |         45 |          0 |          5 |         50 |
+| /Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/styles/navbar.css             | CSS        |        136 |         16 |         52 |        204 |
+| /Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/styles/taskbar.css            | CSS        |        112 |          5 |         25 |        142 |
+| /Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/Mac/styles/windows.css            | CSS        |        144 |          7 |         50 |        201 |
+| /Users/nathanielkemmenash/Desktop/VS Code Projects/NateOS/src/index.html                        | HTML       |         22 |          0 |          1 |         23 |
+| Total                                                                                           |            |      1,533 |        275 |        451 |      2,259 |
++-------------------------------------------------------------------------------------------------+------------+------------+------------+------------+------------+

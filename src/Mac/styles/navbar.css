@@ -1,0 +1,203 @@
+.navBar{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 25px;
+    /* Make the background be a blur of the html background */
+    background-color: rgba(51,10,170,255);
+
+}
+
+.aLogo{
+    width: 20px;
+ 
+    margin-left: 23%;
+    margin-top: 1%;
+
+
+}
+
+.menu-item-hover.logo-container{
+    /* background color to blurred white */
+    background-color: rgba(255, 255, 255, 0.321);
+    border-radius: 5px;
+
+}
+
+.menu-item-selected.logo-container{
+    /* background color to blurred white */
+    background-color: rgba(255, 255, 255, 0.321);
+    border-radius: 5px;
+
+}
+
+.rightSide {
+    position: fixed;
+    top: 0.5%;
+    right: 0%;
+    width: 300px;
+    height: 4%;
+    text-align: right;
+    color: white;
+    font-size: 13px;
+    
+    padding-right: 1%;
+    /* Center vertically in navBar Div */
+
+
+}
+
+.submenu {
+    display: none;
+    position: fixed;
+    width: 20%;
+    background-color: rgba(39, 66, 87, 0.523);
+    backdrop-filter: blur(15px);
+    border-radius: 5px;
+    border-color: #454545;
+    border-style: solid;
+    border-width: 1px;
+    /* Shadow */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.272);
+    margin-left: -0.5%;
+    color: white;
+    text-align: left;
+    /* z-index: 4; */
+}
+
+.submenu label {
+    display: block;
+    padding-left: 5%;
+    padding-right: 5%;
+    padding-top: 2%;
+    padding-bottom: 2%;
+    font-size: 13px;
+   
+}
+/* Get last label in menu */
+.submenu label:last-child{
+    margin-bottom: 1%;
+}
+
+.submenu label:first-child{
+    margin-top: 1%;
+}
+
+
+.menu-item-hover > .submenu {
+    display: block;
+}
+
+.menu-item-selected > .submenu {
+    display: block;
+}
+
+.menu-divider {
+    border-color: rgba(71, 115, 149, 0.35);
+    backdrop-filter: blur(10px);
+    border-style: solid;
+    border-width: 0.5px;
+    width: 95%;
+}
+
+.submenu label:hover{
+    background-color: rgb(48,108,212);
+    backdrop-filter: blur(10px);
+    border-radius: 5px;
+}
+
+.navBar-left{
+    position: fixed;
+    top: 0%;
+  
+    color: white;
+    width: 50%;
+    /* Arrange horizontally */
+   
+
+   
+
+    
+}
+
+/* .selected-app {
+    
+    Make a grid with one row equally sized cells 
+    display: inline;
+
+} */
+
+.app-options .menu-item label{
+
+    font-size: 13px;
+
+}
+
+
+.app-options .app-name{
+    font-size: 13px;
+   
+    font-weight: bold;
+}
+
+.menu-item.menu-item-hover {
+    /* background color to blurred white */
+    background-color: rgba(255, 255, 255, 0.321);
+    border-radius: 5px;
+
+}
+
+.menu-item {
+    display: inline-block;;
+    text-align: center;
+    padding-top: 0.5%;
+    padding-bottom: 0.5%;
+    padding-left: 1%;
+    padding-right: 1%;
+    
+}
+
+.menu-item.menu-item-selected {
+    /* background color to blurred white */
+    background-color: rgba(255, 255, 255, 0.321);
+    border-radius: 5px;
+
+}
+
+.logo-container{
+    width: 2.5%;
+    position: fixed;
+    left:5px;
+    
+    
+}
+
+#search {
+    width: 12px;
+    margin-right: 10px;
+
+  }
+
+  #batteryIcon{
+    width: 25px;
+    margin-right: 10px;
+  }
+
+  #batteryBolt{
+    width: 10px;
+    margin-right: 10px;
+    position: absolute;
+    left: 115px;
+  }
+
+  .dateTime{
+    display: inline-block;
+  }
+
+  .battery{
+    display: inline-block;
+  }
+  .app-options {
+    display: inline;
+}
