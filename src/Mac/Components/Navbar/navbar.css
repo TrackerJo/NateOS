@@ -1,0 +1,79 @@
+.navbar{
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 99.5%;
+    height: 28px;
+    /* Make the background be a blur of the html background */
+    background-color: rgba(51,10,170,255);
+    display: flex;
+    justify-content: space-between;
+    color: white;
+    z-index: 2;
+
+
+}
+
+.navbar-left{
+    display: flex;
+    justify-content: flex-start;
+    width: 70%;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+.navbar-right{
+    display: flex;
+    justify-content: flex-end;
+    width: 30%;
+    height: 100%;
+    /* border: 1px solid red;   */
+    
+   
+    align-items: center;
+    padding-right: 1%;
+    font-size: 10px;
+}
+
+.gap {
+    width: 5px;
+    height: 100%;
+    /* border: 1px solid red; */
+}
+
+
+
+
+#search {
+    width: 12px;
+    margin-right: 10px;
+
+  }
+
+  .BatteryIcon{
+    width: 25px;
+    margin-right: 20px;
+  }
+
+  #batteryBolt{
+    width: 10px;
+    margin-right: 10px;
+    position: absolute;
+    left: 115px;
+  }
+
+  .dateTime{
+    display: inline-block;
+    font-size: 12px;
+
+  }
+
+  #time{
+    margin-left: 10px;
+  }
+
+
+  .battery{
+    display: flex;
+    gap: 5px;
+  }

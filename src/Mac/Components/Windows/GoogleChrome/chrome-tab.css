@@ -1,0 +1,78 @@
+
+.chrome-tab{
+    color: white;
+    height: 35px;
+    width: 150px;
+   
+    
+    border-radius: 10px 10px 0px 0px;
+    padding-left: 10px;
+    padding-right: 10px;
+    font-size: 10px;
+    overflow: hidden;
+}
+
+.chrome-tab:hover{
+    background-color: rgba(255, 255, 255, 0.083);
+
+}
+
+.chrome-tab.chrome-tab-active{
+    background-color: rgba(53,54,58,255);
+
+}
+
+
+.chrome-tab label{
+    position: relative;
+    top: 6px;
+    font-size: 12px;
+}
+
+.chrome-tab-close{
+    width: 8px;
+    float: right;
+    position: relative;
+    top: 11px;
+    padding: 2px;
+}
+
+.chrome-tab-icon{
+    width: 15px;
+    position: relative;
+    top: 10px;
+    margin-right: 5px;
+}
+
+.chrome-tab-close:hover{
+    background-color: rgba(255, 255, 255, 0.209);
+    border-radius: 5px;
+}
+
+.chrome-tab-close.chrome-tab-clicked{
+    background-color: rgba(255, 255, 255, 0.31);
+    border-radius: 5px;
+}
+
+.chrome-tab-contents{
+    min-width: 100px;
+    
+}
+
+.chrome-tab .chrome-tab-divider{
+    display: block;
+    height: 25px;
+    width: 2px;
+    background-color: rgba(53,54,58,255);
+    position: relative;
+    left:155px;
+    top:-12px;
+}
+
+.chrome-tab:hover .chrome-tab-divider{
+    display: none;
+}
+
+.chrome-tab.window-active .chrome-tab-divider{
+    display: none;
+}

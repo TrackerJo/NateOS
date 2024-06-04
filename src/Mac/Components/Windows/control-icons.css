@@ -1,0 +1,22 @@
+
+.window-control-icons img{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    margin-right: -5px;
+}
+
+.window-control-icons{
+    width: fit-content;
+    cursor: default;
+    padding-top: 10px;
+    padding-left: 10px;
+    display: inline-block;
+    position: relative;
+
+    
+}
+
+.window-control-icon.window-control-icon-clicked:hover{
+    filter: brightness(120%);
+}

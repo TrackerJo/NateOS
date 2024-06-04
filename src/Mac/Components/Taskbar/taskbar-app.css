@@ -1,0 +1,70 @@
+
+.taskbar-app{
+    display: flex;
+    justify-content: center;
+    width: 50px;
+}
+
+.taskbar-app-icon.taskbar-app-clicked{
+    filter: brightness(50%);
+}
+
+.taskbar-app.context-menu-open > .taskbar-app-contents > .taskbar-app-icon{
+    filter: brightness(50%);
+}
+
+.taskbar-app-icon{
+    max-width: 100%;
+  height: auto;
+  
+}
+
+#steam{
+    width: 50px;
+    padding-left: 5px;
+  
+}
+
+#finder{
+    padding-right: 5px;
+}
+
+.taskbar-app.taskbar-app-open > .taskbar-app-contents > .app-open-dot{
+    filter: brightness(70%);
+    display: inline-block;
+    
+}
+
+.taskbar-tooltip{
+    position: relative;
+    background-color: rgba(28,28,28,255);
+    color: white;
+    font-size: small;
+
+    display: none;
+    height: fit-content;
+    padding: 5px;
+    border-radius: 5px;
+    border-color: #626262;
+    border-style: solid;
+    border-width: 1px;
+}
+
+.taskbar-app:hover:not(.context-menu-open) .taskbar-tooltip{
+    display: block;
+    position: absolute;
+    top: -60%;
+    /* color: red; */
+}
+
+.taskbar-app-contents {
+    text-align: center;
+}
+
+.app-open-dot {
+    width: 5px;
+    height: 5px;
+    position: relative;
+    top: -15px;
+    display: none;
+}

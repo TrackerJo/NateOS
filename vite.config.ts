@@ -1,0 +1,30 @@
+import { defineConfig } from 'vite'
+import react from '@vitejs/plugin-react'
+import { resolve } from 'path'
+
+
+const root = resolve(__dirname, 'src')
+const outDir = resolve(__dirname, 'dist')
+
+// https://vitejs.dev/config/
+export default defineConfig({
+  plugins: [react()],
+  root,
+  base: '/',
+  build: {
+    outDir,
+    emptyOutDir: true,
+    rollupOptions: {
+      
+      input: {
+        index: resolve(root,  'index.html'),
+        mac: resolve(root,  'Mac' ,'index.html'),
+        macLoadup: resolve(root,  'Mac' ,'loadup.html'),
+
+
+        windows: resolve(root,  'Windows' ,'index.html'),
+        
+      }
+    }
+  }
+})

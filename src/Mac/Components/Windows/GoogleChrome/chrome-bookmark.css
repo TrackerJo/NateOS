@@ -1,0 +1,32 @@
+
+.chrome-bookmark{
+    display: inline;
+    
+    height: 20px;
+    text-align: center;
+    padding: 4px;
+    padding-left: 10px;
+}
+
+.chrome-bookmark:hover{
+    background-color: rgba(255, 255, 255, 0.082);
+    border-radius: 15px;
+    
+}
+
+.chrome-bookmark-icon{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 1px;
+    left: -5px;
+}
+
+.chrome-bookmark-title{
+    color: white;
+    font-size: 12px;
+    position: relative;
+    top: -2px;
+    
+
+}

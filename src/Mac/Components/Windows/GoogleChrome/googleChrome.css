@@ -1,0 +1,297 @@
+.window{
+    min-width: 200px;
+    min-height: 200px;
+    width: 1000px;
+    height: 700px;
+    
+    display: none;
+    position: absolute;
+    /* z-index: 1; */
+
+    
+  }
+
+
+
+  .window.window-open{
+    display: flex;
+  }
+
+  .window.window-dragging{
+    cursor: move;
+  }
+
+  .window.window-resize-width{
+    cursor: ew-resize;
+  }
+
+.window.window-resize-height{
+    cursor: ns-resize;
+}
+
+.window.window-resize-both-lr{
+    cursor: nwse-resize; 
+}
+
+.window.window-resize-both-rl{
+    cursor: nesw-resize; 
+}
+
+#googleFrame{
+    width: 100%;
+    height: 100%;
+    border: none;
+   display: block;
+}
+/* 
+.Tabs{
+    width: 100%;
+} */
+
+.window-chrome{
+    /* Shadow */
+    box-shadow: 0px 0px 10px 0px rgba(0, 0, 0, 0.272);
+
+    border-radius: 10px;
+    border-color: #626262;
+    border-style: solid;
+    border-width: 1px;
+    background-color: rgba(28,28,28,255);
+    display: flex;
+    flex-direction: column;
+}
+
+
+.window.window-maximized{
+    width: 100%;
+    height: 100%;
+    top: 0%;
+    left: 0%;
+    border-radius: 0px;
+    position: absolute;
+    /* Create an enlarge animation */
+    z-index: 1;
+ 
+
+}
+
+
+.chrome-search-bar{
+    width: 100%;
+    height: 30px;
+    background-color: rgba(53,54,58,255);
+    display: inline-flex;
+    align-items: center;
+    padding-top: 7px;
+   
+}
+
+.chrome-bookmarks-bar{
+    width: 100%;
+    height: 30px;
+    display: inline-flex;
+    align-items: center;
+    gap: 5px;
+    background-color: rgba(53,54,58,255);
+    padding-bottom: 5px;
+    border-bottom:1px solid #626262;
+}
+
+.chrome-tabs{
+    width: 88%;
+    height: 30px;
+   
+    display: inline-flex;
+    position: relative;
+
+    left: 10px;
+    gap: 0px;
+}
+
+.chrome-top-bar{
+    height: 40px;
+    display: flex;
+    /* overflow-wrap: break-word; */
+    align-items: center;
+}
+
+
+.chrome-search-bar-controls{
+    width: fit-content;
+    height: 100%;
+    display: inline-flex;
+    align-items: center;
+    padding: 5px;
+    gap: 10px;
+}
+
+.chrome-search-bar-back-icon{
+    width: 13px;
+    height: 12px;
+}
+
+.chrome-search-bar-forward-icon{
+    width: 13px;
+    height: 12px;
+    
+}
+
+.chrome-search-bar-refresh-icon{
+    width: 12px;
+    height: 12px;
+    
+}
+
+.chrome-search-bar-back:hover{
+    background-color: rgba(255, 255, 255, 0.082);
+    border-radius: 15px;
+
+}
+
+.chrome-search-bar-back{
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    padding: 2px;
+    display: inline;
+}
+
+
+.chrome-search-bar-forward{
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    padding: 2px;
+    display: inline;
+}
+
+.chrome-search-bar-forward:hover{
+    background-color: rgba(255, 255, 255, 0.082);
+    border-radius: 15px;
+
+}
+
+.chrome-search-bar-refresh{
+    height: 20px;
+    width: 20px;
+    text-align: center;
+    padding: 2px;
+    display: inline;
+}
+
+.chrome-search-bar-refresh:hover{
+    background-color: rgba(255, 255, 255, 0.082);
+    border-radius: 15px;
+
+}
+
+.chrome-search-bar-input-div{
+    display: inline;
+    /* padding-left: 5px; */
+    width: 70%;
+    height: 30px;
+    /* padding-top: 7px; */
+    
+}
+
+.chrome-search-bar-input{
+    background-color: rgba(28,28,28,255);
+    border: none;
+    border-radius: 15px;
+    width: 90%;
+    height: 25px;
+    padding-left: 25px;
+    color: white;
+}
+
+.chrome-search-bar-input:focus{
+    /* Set outline to be the default blue */
+    outline: 2px solid #4d90fe;
+}
+
+
+.chrome-search-bar-input-icon{
+    width: 15px;
+    height: 15px;
+    position: relative;
+    top: 3px;
+    left: 20px;
+    
+}
+
+.chrome-search-bar-extensions{
+    display: inline-flex;
+    height: 25px;
+    padding-left: 5px;
+    padding-right: 5px;
+    align-items: center;
+    
+    /* margin-top: 7px; */
+}
+
+.chrome-search-bar-extensions:hover{
+    /* Show a lighter grey outline; */
+    background-color: rgba(255, 255, 255, 0.082);
+    border-radius: 15px;
+}
+
+.chrome-search-bar-extensions-icon{
+    width: 15px;
+    
+}
+
+.chrome-search-bar-profile{
+    display: inline;
+    width: 20px;
+    height: 20px;
+    padding: 4px;
+}
+
+.chrome-search-bar-profile:hover{
+    background-color: rgba(255, 255, 255, 0.082);
+    border-radius: 15px;
+    
+}
+
+.chrome-search-bar-profile-icon{
+    width: 20px;
+    height: 20px;
+}
+
+.chrome-search-bar-extras{
+    width: 30%;
+    display: inline-flex;
+    justify-content: flex-end;
+    align-items: center;
+    gap: 10px;
+    padding-right: 10px ;
+}
+
+.chrome-search-bar-settings{
+    display: inline;
+    width: 20px;
+    height: 20px;
+    text-align: center;
+}
+
+.chrome-search-bar-settings:hover{
+    background-color: rgba(255, 255, 255, 0.082);
+    border-radius: 15px;
+}
+
+.chrome-search-bar-settings-icon{
+    width: 10px;
+    height: 10px;
+}
+
+
+
+.chrome-tab-add {
+    width: 10px;
+    height: 10px;
+    position: relative;
+    top: 7px;
+    left: 6px;
+    display: inline-block;
+    padding: 4px;
+}

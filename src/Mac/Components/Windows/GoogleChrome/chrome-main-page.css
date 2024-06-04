@@ -1,0 +1,95 @@
+
+.chrome-window-content {
+    width: 100%;
+    background-color: rgba(28,28,28,255);
+    display: flex;
+    height: 100%;
+    border-radius: 10px;
+}
+
+.chrome-page-basic{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10px;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
+
+.duckduckgo-icon-container{
+    
+    color: white;
+    display:flex;   
+    align-items: center;
+    flex-direction: column;
+    padding-top: 70px;
+}
+
+.duckduckgo-icon{
+    width: 50%;
+    height: 50%;
+}
+
+.duckduckgo-icon-text{
+    font-size: 35px;
+    font-weight: 300;
+    color: white;
+    margin-top: 10px;
+}
+
+.duckduckgo-search-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: row;
+    margin-top: 20px;
+    background-color: rgba(53,54,58,255);
+    border-radius: 5px;
+    width: 50%;
+  
+}
+
+.duckduckgo-search-bar{
+    background: none;
+    border: none;
+    color: white;
+    height: 40px;
+    width: 100%;
+    padding-left: 10px;
+    font-size: 15px;
+}
+
+.duckduckgo-search-bar:focus{
+    outline: none;
+}
+
+.duckduckgo-search-button{
+    width: 15px;
+
+    padding: 15px;
+    /* Change the border radius of the top right and bottom right corners to 5px*/
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px;
+    filter: brightness(50%);
+}
+
+.duckduckgo-search-container:hover > .duckduckgo-search-button{
+    background-color: rgba(255, 255, 255, 0.082);
+    filter: brightness(75%);
+
+}
+
+.duckduckgo-search-button:hover{
+    cursor: pointer;
+    filter: brightness(100%) !important;
+}
+
+.chrome-welcome-page-content{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+}
