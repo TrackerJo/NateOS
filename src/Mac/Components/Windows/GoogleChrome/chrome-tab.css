@@ -6,13 +6,13 @@
    
     
     border-radius: 10px 10px 0px 0px;
-    padding-left: 10px;
-    padding-right: 10px;
+    /* padding-left: 10px;
+    padding-right: 10px; */
     font-size: 10px;
     overflow: hidden;
 }
 
-.chrome-tab:hover{
+:not(.chrome-tab-active).chrome-tab:hover .chrome-tab-contents { 
     background-color: rgba(255, 255, 255, 0.083);
 
 }
@@ -56,17 +56,22 @@
 
 .chrome-tab-contents{
     min-width: 100px;
+    height: 30px;
+    border-radius: 10px;
+    
+    padding-left: 5px;
+    padding-right: 5px;
     
 }
 
 .chrome-tab .chrome-tab-divider{
     display: block;
-    height: 25px;
+    height: 15px;
     width: 2px;
     background-color: rgba(53,54,58,255);
     position: relative;
-    left:155px;
-    top:-12px;
+    left:148px;
+    top:-20px;
 }
 
 .chrome-tab:hover .chrome-tab-divider{
@@ -75,4 +80,9 @@
 
 .chrome-tab.window-active .chrome-tab-divider{
     display: none;
+}
+
+.chrome-tab-add:hover{
+    background-color: rgba(255, 255, 255, 0.209);
+    border-radius: 10px;
 }

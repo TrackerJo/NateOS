@@ -1,5 +1,6 @@
 import { useEffect, useRef, useState } from "react";
 import "./GoogleChrome/googleChrome.css";
+import ControlBar from "./control-bar";
 
 type MyWindowProps = {
     children: React.ReactNode;
@@ -18,8 +19,10 @@ type MyWindowProps = {
 }
 
 function MyWindow({ children, windowType, windowTop, windowLeft, windowWidth, windowHeight, setWindowTop, setWindowLeft, setWindowWidth, setWindowHeight, isMaximized, onClick }: MyWindowProps) {
-    const windowMinHeight: number = 425;
+    const windowMinHeight: number = 500;
     const windowMinWidth: number = 625;
+    const minY: number = 10;
+
     let pos1 = 0, pos2 = 0, pos3 = 0, pos4 = 0;
    
     const windowElmt = useRef<HTMLDivElement>(null);
@@ -28,6 +31,7 @@ function MyWindow({ children, windowType, windowTop, windowLeft, windowWidth, wi
     const [resizingBothLR, setResizingBothLR] = useState<boolean>(false);
     const [resizingBothRL, setResizingBothRL] = useState<boolean>(false);
     const [isDragging, setIsDragging] = useState<boolean>(false);
+    const [showingControlBar, setShowingControlBar] = useState<boolean>(false);
     
 
     function dragMouseExit() {
@@ -46,6 +50,48 @@ function MyWindow({ children, windowType, windowTop, windowLeft, windowWidth, wi
         // get the mouse cursor position at startup:
         pos3 = e.clientX;
         pos4 = e.clientY;
+        if(isMaximized){
+          console.log('Maximized')
+          //check if mouse is at the top of the window
+          const navbar = document.querySelector('.navbar');
+          if(e.clientY < windowTop + 2) {
+            console.log('AT TOP');
+            //Animate navbar to drop down and show the control icons
+
+            //Set navbar z-index to 1 to make sure it's on top of the window
+            if(navbar!.style.zIndex === '8') return;
+            setShowingControlBar(true);
+            navbar!.style.zIndex = '8';
+            
+            navbar!.animate([
+              {top: '-30px'},
+              {top: '0px'},
+              
+            ], {
+              duration: 200,
+              easing: 'ease-in-out',
+              fill: 'forwards'
+            })
+            
+          } else if(e.clientY > windowTop + 2 && showingControlBar) {
+            
+            setShowingControlBar(false);
+            
+            navbar!.animate([
+              {top: '0px'},
+              {top: '-30px'},
+              
+            ], {
+              duration: 200,
+              easing: 'ease-in-out',
+              fill: 'forwards'
+            })
+            //Wait two seconds before setting the z-index back to 0
+            setTimeout(() => {
+              navbar!.style.zIndex = '0';
+            }, 400)
+          }
+        }
         const windowTopLeftX = windowElmt.current!.offsetLeft;
         const windowTopLeftY = windowElmt.current!.offsetTop;
         const windowBottomRightX = windowElmt.current!.offsetLeft + windowElmt.current!.clientWidth;
@@ -253,8 +299,8 @@ function MyWindow({ children, windowType, windowTop, windowLeft, windowWidth, wi
   
         setWindowHeight(windowElmt.current!.clientHeight);
         console.log("Window Height")
-        console.log(windowHeight);
-        if(windowMinHeight >= windowHeight) {
+        console.log(windowHeight, );
+        if(windowMinHeight > windowElmt.current!.offsetTop + windowElmt.current!.clientHeight - pos2) {
           return;
         }
     
@@ -422,7 +468,7 @@ function MyWindow({ children, windowType, windowTop, windowLeft, windowWidth, wi
         pos4 = e.clientY;
         console.log(window.innerHeight - windowElmt.current!.clientHeight);
         if(windowElmt.current!.offsetTop - pos2 <= 24 || windowElmt.current!.offsetLeft - pos1 <= 0 || windowElmt.current!.offsetTop - pos2 >= window.innerHeight - windowElmt.current!.clientHeight - 2|| windowElmt.current!.offsetLeft - pos1 >= window.innerWidth - windowElmt.current!.clientWidth - 2){
-          // return;
+          return;
         }
         // set the element's new position:
         setWindowTop(windowElmt.current!.offsetTop - pos2) + "px";
@@ -443,8 +489,12 @@ function MyWindow({ children, windowType, windowTop, windowLeft, windowWidth, wi
       }
 
 
+   
+
+
     return (
         <div onClick={onClick} onMouseDown={dragMouseDown} onMouseMove={resizeMouseOver} onMouseLeave={dragMouseExit} onMouseUp={closeDragElement} className={"window noselect window-open window-active window-draggable " + (isMaximized ? "window-maximized " : "" ) + windowType + (isDragging ? " window-dragging " : " ") + (resizingWidth ? " window-resize-width " : "") + (resizingHeight ? " window-resize-height " : "") + (resizingBothLR ? " window-resize-both-lr ": "") + (resizingBothRL ? " window-resize-both-rl " : "")} style={isMaximized ? {} :{top: `${windowTop}px`, height: `${windowHeight}px`, left: `${windowLeft}px`, width: `${windowWidth}px`}} ref={windowElmt}>
+            <ControlBar visible={showingControlBar} />
             {children}
         </div>
     );

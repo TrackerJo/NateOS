@@ -1,0 +1,397 @@
+
+
+
+.chrome-welcome-page-content{
+    display: flex;
+    align-items: center;
+    /* justify-content: center; */
+    flex-direction: column;
+    height: 100%;
+    width: 100%;
+    position: relative;
+}
+.page-title {
+    position: relative;
+    top: 30%;
+    font-size: 100px;
+    color: white;
+}
+
+.background {
+    width: 300px;
+    height: 300px;
+    background-color: rgba(50, 255, 234, 0.904);
+    position:absolute;
+    top: 15%;
+    border-radius: 100%;
+    filter:blur(50px)
+}
+
+.outer-background{
+    width: 50px;
+    height: 50px;
+    background-color: rgba(50, 255, 234, 0.904);
+    position:absolute;
+    top: 40%;
+    left: 30%;
+    border-radius: 100%;
+    filter:blur(20px);
+    /* animation: example 2s infinite; */
+}
+
+@keyframes example {
+    from {
+        top: 40%;
+        left: 30%;
+        width: 50px;
+        height: 50px;
+
+    }
+    to {
+        top:35%;
+        left:25%;
+        width: 10px;
+        height: 10px;
+        filter:blur(10px);
+
+    }
+  }
+
+ 
+  .title-dot{
+    width: 20px;
+    height: 20px;
+    background-color: white;
+    position:absolute;
+    border-radius: 100%;
+    filter:blur(3px);
+  }
+
+  .title-dot.w-1{
+    
+    top: 20%;
+    left: 28.5%;
+   
+
+  }
+/* 
+  .title-dot.w-2{
+    
+    top: 52%;
+    left: 29%;
+    
+
+
+  }
+
+  .title-dot.w-3{
+    
+    top: 55%;
+    left: 29.5%;
+    
+
+
+  }
+
+  .title-dot.w-4{
+    
+    top: 58%;
+    left: 30%;
+    
+
+
+  }
+
+  .title-dot.w-5{
+    
+    top: 55%;
+    left: 31%;
+    
+
+
+  }
+
+  .title-dot.w-6{
+    
+    top: 52%;
+    left: 31.5%;
+    
+
+
+  }
+
+  .title-dot.w-7{
+    
+    top: 49%;
+    left: 32%;
+    
+
+
+  }
+
+  .title-dot.w-8{
+    
+    top: 49%;
+    left: 32.5%;
+   
+
+  }
+
+  .title-dot.w-9{
+    
+    top: 52%;
+    left: 33%;
+    
+
+
+  }
+
+  .title-dot.w-10{
+    
+    top: 55%;
+    left: 33.5%;
+    
+
+
+  }
+
+  .title-dot.w-11{
+    
+    top: 58%;
+    left: 34%;
+    
+
+
+  }
+
+  .title-dot.w-12{
+    
+    top: 55%;
+    left: 34.5%;
+    
+
+
+  }
+
+  .title-dot.w-13{
+    
+    top: 52%;
+    left: 35%;
+    
+
+
+  }
+
+  .title-dot.w-14{
+    
+    top: 49%;
+    left: 35.5%;
+    
+
+
+  }
+
+  .title-dot.e-1{
+    top: 55%;
+    left: 41%;
+  }
+
+  .title-dot.e-2{
+    
+    top: 52%;
+    left: 40.5%;
+    
+
+
+  }
+
+  .title-dot.e-3{
+    
+    top: 51%;
+    left: 39%;
+    
+
+
+  }
+
+  .title-dot.e-4{
+    
+    top: 52%;
+    left: 37.5%;
+    
+
+
+  }
+
+  .title-dot.e-5{ 
+    top: 55%;
+    left: 37%;
+  }
+
+  .title-dot.e-6{
+    top: 55%;
+    left: 39%;
+  }
+
+  .title-dot.e-7{
+    
+    top: 58%;
+    left: 37.5%;
+    
+
+
+  }
+  .title-dot.e-8{
+    top: 59.5%;
+    left: 39%;
+  }
+
+  .title-dot.e-9{
+    top: 59%;
+    left: 40.5%;
+  }
+
+  .title-dot.l-1{
+    top: 48%;
+    left: 43.5%;
+  }
+
+  .title-dot.l-2{
+    top: 51%;
+    left: 43.5%;
+  }
+
+  .title-dot.l-3{
+    top: 54%;
+    left: 43.5%;
+  }
+
+  .title-dot.l-4{
+    top: 57%;
+    left: 43.5%;
+  }
+
+  .title-dot.l-5{
+    top: 60%;
+    left: 43.5%;
+  }
+
+  .title-dot.c-1{
+    top: 53.5%;
+    left: 49.5%;
+  }
+
+  .title-dot.c-2{
+    
+    top: 52%;
+    left: 48%;
+    
+
+
+  }
+
+  .title-dot.c-3{
+    
+    top: 53%;
+    left: 46.5%;
+    
+
+  }
+
+
+  .title-dot.c-4{
+    
+    top: 56%;
+    left: 46%;
+    
+
+
+  }
+
+  .title-dot.c-5{ 
+    top: 59%;
+    left: 46.5%;
+  }
+  
+
+
+  .title-dot.c-6{
+    
+    top: 59.7%;
+    left: 48.3%;
+    
+
+
+  }
+
+  
+  .title-dot.c-7{
+    top: 58.5%;
+    left: 49.5%;
+  }
+  
+  .title-dot.o-1{
+    top: 53.5%;
+    left: 55.5%;
+  }
+
+  .title-dot.o-2{
+    
+    top: 52%;
+    left: 54%;
+    
+
+
+  }
+
+  .title-dot.o-3{
+    
+    top: 53%;
+    left: 52.5%;
+    
+
+  }
+
+
+  .title-dot.o-4{
+    
+    top: 56%;
+    left: 52%;
+    
+
+
+  }
+
+  .title-dot.o-5{ 
+    top: 59%;
+    left: 52.5%;
+  }
+  
+
+
+  .title-dot.o-6{
+    
+    top: 59.7%;
+    left: 54%;
+    
+
+
+  }
+
+  
+  .title-dot.o-7{
+    top: 58.5%;
+    left: 55.5%;
+  }
+
+  .title-dot.o-8{
+    top: 56%;
+    left: 56%;
+  } */
+
+  .title-dots {
+    width: 500px;
+    height: 200px;
+    position: relative;
+    top: 10%;
+  }

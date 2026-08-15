@@ -5,7 +5,7 @@ import "./battery.css"
 
 
 import BatteryImg from '../../../assets/battery_0.png'
-import Bolt from '../../../assets/bolt_green.png'
+import Bolt from '../../../assets/bolt.png'
 
 type BatteryProps = {
     level: number;

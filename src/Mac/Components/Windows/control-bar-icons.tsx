@@ -9,13 +9,13 @@ import MaximizeIconHovered from "../../assets/maximize_icon_hovered.png"
 
 import { useState } from "react";
 
-type ControlIconsProps = {
+type ControlBarIconsProps = {
     setMaximized: (maximized: boolean) => void;
     maximizeWindow: () => void;
     closeWindow: () => void;
 }
 
-function ControlIcons({setMaximized, maximizeWindow, closeWindow} : ControlIconsProps) {
+function ControlBarIcons({setMaximized, maximizeWindow, closeWindow} : ControlBarIconsProps) {
     const [isHovered, setIsHovered] = useState<boolean>(false);
     const [isMaximized, setIsMaximized] = useState<boolean>(false);
     const [maxClicked, setMaxClicked] = useState<boolean>(false);
@@ -111,4 +111,4 @@ function ControlIcons({setMaximized, maximizeWindow, closeWindow} : ControlIcons
     )
 }
 
-export default ControlIcons
+export default ControlBarIcons

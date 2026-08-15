@@ -46,10 +46,10 @@
 }
 
 .battery-bolt{
-    width: 12px;
+    width: 10px;
 
     position: absolute;
     z-index: 10;
-    margin-left: 10px;
+    margin-left: 11px;
 
 }

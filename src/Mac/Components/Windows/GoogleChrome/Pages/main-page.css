@@ -7,15 +7,6 @@
     border-radius: 10px;
 }
 
-.chrome-page-basic{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-}
 
 .duckduckgo-icon-container{
     
@@ -85,11 +76,3 @@
     filter: brightness(100%) !important;
 }
 
-.chrome-welcome-page-content{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    flex-direction: column;
-    height: 100%;
-    width: 100%;
-}

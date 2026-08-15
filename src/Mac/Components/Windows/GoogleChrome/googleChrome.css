@@ -70,7 +70,7 @@
     border-radius: 0px;
     position: absolute;
     /* Create an enlarge animation */
-    z-index: 1;
+    z-index: 3;
  
 
 }
@@ -95,6 +95,7 @@
     background-color: rgba(53,54,58,255);
     padding-bottom: 5px;
     border-bottom:1px solid #626262;
+    z-index: 1;
 }
 
 .chrome-tabs{
@@ -123,6 +124,9 @@
     align-items: center;
     padding: 5px;
     gap: 10px;
+    position: relative;
+    top: -3px;
+
 }
 
 .chrome-search-bar-back-icon{
@@ -294,4 +298,15 @@
     left: 6px;
     display: inline-block;
     padding: 4px;
+}
+
+.window-nav-bar-detector{
+    width: 100%;
+    height: 0.000001px;
+    background-color: rgba(53,54,58,0);
+    display: inline-flex;
+    align-items: center;
+    padding-top: 7px;
+    position: relative;
+    top: 0px;
 }

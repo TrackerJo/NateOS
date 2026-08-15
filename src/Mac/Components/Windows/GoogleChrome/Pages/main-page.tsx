@@ -1,12 +1,12 @@
-import "./chrome-main-page.css"
+import "./main-page.css"
 
-import DuckLogo from "../../../assets/duck-logo.png"
+import DuckLogo from "../../../../assets/duck-logo.png"
 
 function ChromeMainPage() {
 
     return (
-        <div className="chrome-window-content">
-            <div className="chrome-page chrome-page-basic">
+        // <div className="chrome-window-content">
+            // <div className="chrome-page chrome-page-basic">
                 <div className="chrome-welcome-page-content">
                     <div className="duckduckgo-icon-container">
                         <img src={DuckLogo} className="duckduckgo-icon"/>
@@ -17,8 +17,8 @@ function ChromeMainPage() {
                         <img src="./assets/search_icon.png" className="duckduckgo-search-button"/>
                     </div>
                 </div>
-            </div>
-        </div>
+            // </div>
+        // </div>
     )
 
 } 

@@ -4,12 +4,13 @@ type ChromeBookmarkProps = {
     title: string;
     icon: string;
     alt: string;
+    onClick: () => void;
 }
 
 
-function ChromeBookmark({title, icon, alt}: ChromeBookmarkProps) {
+function ChromeBookmark({title, icon, alt, onClick}: ChromeBookmarkProps) {
     return (
-        <div className="chrome-bookmark">
+        <div className="chrome-bookmark" onClick={onClick}>
             <img className="chrome-bookmark-icon" src={icon} alt={alt}/>
             <label className="chrome-bookmark-title">{title}</label>
         </div>

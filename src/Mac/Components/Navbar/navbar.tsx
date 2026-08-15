@@ -179,7 +179,8 @@ function Navbar({ selectedApp}: NavbarProps) {
         }, (seconds * 1000));
        
         navigator.getBattery().then((battery) => {
-            setBatteryCharge(battery.level * 100);
+            const batteryCharge = Math.round(battery.level * 100);
+            setBatteryCharge(batteryCharge);
             setIsBatteryCharging(battery.charging);
           
             battery.addEventListener("chargingchange", () => {
